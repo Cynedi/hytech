@@ -117,7 +117,6 @@ h1 {
    display: flex;
    margin: auto;
 
-
  }
 
 
@@ -155,6 +154,15 @@ h1 {
 h1 {
   font-size: 100px;
   font-weight: normal;
+}
+
+#carousel {
+  margin-top: 250px;
+}
+
+.Slide {
+  width: 600px;
+  height: auto;
 }
 }
 
