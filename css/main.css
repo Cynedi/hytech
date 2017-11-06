@@ -55,9 +55,82 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/***********************Mobile et génerale*******************************
+****************************************************************************/
+
+/*****************Front-page*****************************************/
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Overlock SC', cursive !important;
+
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.entete {
+  background-color: rgb(90, 247, 214);
+  height: 200px;
+  display: flex;
+
+}
+h1 {
+  margin: auto;
+  font-family: 'Londrina Sketch', cursive !important;
+  color: white !important;
+  font-size: 60px;
+
+}
+ #menu {
+   background-color: white !important;
+ }
+ #menu a {
+   color: black;
+   margin-right: 30px;
+ }
+
+ #menu a:hover {
+   text-decoration: underline;
+ }
+
+ .material-icons {
+   color: black;
+ }
+
+ .logo {
+   width: 100px;
+   position: absolute;
+   margin-top: 30px;
+ }
+
+ #carousel {
+   margin-top: 220px;
+ }
+
+ .Slide{
+   width: 300px;
+   height: 200px;
+   display: flex;
+   margin: auto;
+
+
+ }
 
 
 
+/***********************page Blog*************************************/
+
+.article {
+  margin-top: 50%;
+  display:block;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 200px;
+}
 
 
 
@@ -74,8 +147,15 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 180px;
+  }
 
+h1 {
+  font-size: 100px;
+  font-weight: normal;
+}
 }
 
 @media print,

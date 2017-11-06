@@ -12,7 +12,7 @@
 
 
       <div class="row">
-        <section class="col s12 m6">
+        <section class="article col s12 m6">
 
           <article class="card blue-grey darken-1">
 

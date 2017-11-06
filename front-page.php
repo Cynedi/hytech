@@ -4,7 +4,7 @@
 
 //On definie nos Option
 $args=array('post_type' => 'post', //Que les articles
-            'category_name' => 'news', //de la catégorie News
+            
           );
 
 //on stock la requete dans une var pour l'utiliser dans la boucle

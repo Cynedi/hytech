@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/normalize.css" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/main.css" type="text/css" />
-
+<link href="https://fonts.googleapis.com/css?family=Londrina+Sketch|Overlock+SC" rel="stylesheet">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
@@ -26,10 +26,14 @@
     <header>
 
   <!--Menu dynamique-->
+<div class="entete">
+  <a id="logo" href="index.php" class="brand-logo"><img class="logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="logo"/></a>
+  <h1>Hy Tech !</h1>
+</div>
 
   <nav id="menu">
     <div class="nav-wrapper">
-      <a id="logo" href="index.php" class="brand-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="logo"/></a>
+
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <?php wp_nav_menu(); ?>
