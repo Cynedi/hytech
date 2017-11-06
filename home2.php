@@ -50,7 +50,7 @@ sage d'erreur -->
 
 <!-- Fin de la condition -->
 
-
+<?php kriesi_pagination();?>
 
 
 <?php get_footer(); ?>
