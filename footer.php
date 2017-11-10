@@ -1,6 +1,9 @@
 <footer>
-  <p>@Copyright2017 author Cindy Nicolay</p>
+  <div id="piedpage">
+    <p>@Copyright2017 author Cindy Nicolay</p>
+  </div>
 </footer>
+
 <?php wp_footer(); ?>
 <!--hook pour faire l'appel des scripts dans le footer-->
 

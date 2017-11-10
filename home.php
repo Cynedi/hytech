@@ -1,17 +1,19 @@
 <?php get_header(); ?>
 
- <div class="right">
-   <?php dynamic_sidebar('defaut'); ?>
-<!-- permet d'appliquer les widgets activer dans le dashboard -->
-  </div>
+
+
 
 <!--Boucle wordpress-->
+<div class="vide">
 
+</div>
 <?php if(have_posts()) : //si on recupère article
   while (have_posts()) : the_post(); ?> <!--Boucle: on les recupère un à un-->
 
 
+</div>
       <div class="row">
+
         <section class="article col s12 m6">
 
           <article class="card blue-grey darken-1">
