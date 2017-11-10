@@ -12,14 +12,14 @@
 
 
 </div>
-      <div class="row">
+      <div id="billets" class="row">
 
         <section class="article col s12 m6">
 
-          <article class="card blue-grey darken-1">
+          <article class="card ">
 
-            <div class="card-content white-text">
-              <a class="card-title" href="<?php the_permalink()?>"><h1 class="hovertitle"><?php the_title()?></h1></a>
+            <div class="card-content ">
+              <a class="card-title" href="<?php the_permalink()?>"><h2 class="hovertitle"><?php the_title()?></h2></a>
               <!--lien avec le marqueur Permalink pour rediriger vers page article quand on clik sur le titre-->
               <p class="extrait"><?php the_excerpt();?></p>
               <!--Marqueur Excerpt permet recupérer un extrait de l 'article-->

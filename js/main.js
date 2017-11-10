@@ -11,8 +11,10 @@ carousel();
 function carousel() {
     var i;
     var x = document.getElementsByClassName("Slide");
+    var y= document.getElementsByClassName("text");
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
+       y[i].style.display= "none";
     }
 
     mySlider++;
@@ -22,6 +24,7 @@ function carousel() {
     }
 
     x[mySlider].style.display = "block";
+    y[mySlider].style.display="block";
 
     setTimeout(carousel, 2000);
 }
