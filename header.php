@@ -28,7 +28,7 @@
   <!--Menu dynamique-->
 <div class="entete">
   <a id="logo" href="index.php" class="brand-logo"><img class="logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="logo"/></a>
-  <h1>Hy Tech !</h1>
+  <h1 class="titre">Hy Tech !</h1>
 </div>
 
   <nav id="menu">

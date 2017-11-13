@@ -78,7 +78,7 @@ header {
   display: flex;
 
 }
-h1 {
+.titre  {
   margin: auto;
   font-family: 'Londrina Sketch', cursive !important;
   color: white !important;
@@ -186,12 +186,39 @@ h1 {
 
 /*************************formulaire commentaires*******************/
 
-.centercom {
+#respond {
   border: 5px solid rgb(90, 247, 214);
   width: 300px;
-  display: flex;
+  display: block;
   margin: auto;
 }
+
+/************************Page Agenda*********************************/
+#tribe-events {
+  margin-top: 210px;
+}
+
+#tribe-events-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+}
+
+.tribe-events-list-event-title h2{
+  font-size: 30px!important;
+  color:rgb(90, 247, 214)!important;
+}
+
+.tribe-events-event-image img {
+  width: 100% !important;
+}
+
+.tribe-events-single-event-title {
+  font-family: none;
+  color: black;
+}
+
 
 /*************************Footer*****************************/
 #piedpage {
@@ -226,7 +253,7 @@ footer {
   width: 180px;
   }
 
-h1 {
+.titre {
   font-size: 100px;
   font-weight: normal;
 }
@@ -276,9 +303,27 @@ h1 {
 }
 
 /***********************form commentaires**********************/
-.centercom {
+#respond {
   width: 500px;
 }
+
+/*********************Page Agenda*****************************/
+
+#tribe-events {
+  margin-top: 219px;
+}
+
+#tribe-events-content {
+  width: 600px;
+}
+
+
+}
+
+@media only screen and (min-width: 784px) {
+  #tribe-events {
+    margin-top: 232px;
+  }
 }
 
 @media print,
