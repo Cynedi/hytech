@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
- <div class="right">
-   <?php dynamic_sidebar('defaut'); ?>
-<!-- permet d'appliquer les widgets activer dans le dashboard -->
-  </div>
+<div class="vide">
+</div>
 
 <!--Boucle wordpress-->
 
@@ -11,28 +9,28 @@
   while (have_posts()) : the_post(); ?> <!--Boucle: on les recupère un à un-->
 
 
-      <div class="row">
-        <section class="col s12 m6">
+  <div id="billets" class="row">
 
-          <article class="card blue-grey darken-1">
+    <section class="article col s12 m6">
 
-            <div class="card-content white-text">
-              <a class="card-title" href="<?php the_permalink()?>"><h1 class="hovertitle"><?php the_title()?></h1></a>
-              <!--lien avec le marqueur Permalink pour rediriger vers page article quand on clik sur le titre-->
-              <p class="extrait"><?php the_excerpt();?></p>
-              <!--Marqueur Excerpt permet recupérer un extrait de l 'article-->
-            </div>
+      <article class="card ">
 
-            <div class="card-action extrait">
-                <a class="hoverlink" href="<?php the_permalink()?>">Lire la suite ...</a>
-              <!--Marqueur Permalink dans le lien lire la suite pour rediriger-->
-            </div>
+        <div class="card-content ">
+          <a class="card-title" href="<?php the_permalink()?>"><h2 class="hovertitle"><?php the_title()?></h2></a>
+          <!--lien avec le marqueur Permalink pour rediriger vers page article quand on clik sur le titre-->
+          <p class="extrait"><?php the_excerpt();?></p>
+          <!--Marqueur Excerpt permet recupérer un extrait de l 'article-->
+        </div>
 
-          </article>
+        <div class="card-action extrait">
+            <a class="hoverlink" href="<?php the_permalink()?>">Lire la suite ...</a>
+          <!--Marqueur Permalink dans le lien lire la suite pour rediriger-->
+        </div>
 
-        </section>
-      </div>
+      </article>
 
+    </section>
+  </div>
 
       <div class="nav-previous"><?php next_posts_link( 'Older Entries »', 0 ); ?></div>
       <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'mon-theme' ) ); ?></div>

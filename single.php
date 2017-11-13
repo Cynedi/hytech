@@ -1,10 +1,13 @@
 <?php get_header(); ?>
-<a href="index.php/blog">Retour à la liste des articles</a>
+
+<div class="retourliste">
+<a  href="index.php/blog">Retour à la liste des articles</a>
+</div>
 
 <div class="row">
 
 <!--Aside-->
-  <div class="right  col m2">
+  <div id="aside" class="right  col m2">
   <?php dynamic_sidebar('defaut'); ?>
   </div>
 
