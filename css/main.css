@@ -184,6 +184,15 @@ h1 {
   display: none;
 }
 
+/*************************formulaire commentaires*******************/
+
+.centercom {
+  border: 5px solid rgb(90, 247, 214);
+  width: 300px;
+  display: flex;
+  margin: auto;
+}
+
 /*************************Footer*****************************/
 #piedpage {
   width: 300px;
@@ -213,8 +222,8 @@ footer {
 
 /*********************Front-page****************************************/
 
-  .logo {
-    width: 180px;
+.logo {
+  width: 180px;
   }
 
 h1 {
@@ -266,6 +275,10 @@ h1 {
   text-decoration: underline;
 }
 
+/***********************form commentaires**********************/
+.centercom {
+  width: 500px;
+}
 }
 
 @media print,
