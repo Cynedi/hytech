@@ -63,6 +63,8 @@ body {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   font-family: 'Overlock SC', cursive !important;
+  min-height: 100%;
+  position: relative;
 
 }
 
@@ -125,9 +127,8 @@ header {
    text-decoration: underline;
  }
 
- #alaune {
-   width: 300px;
-   margin: auto;
+ .alaune h2 {
+  padding-top: 50px;
  }
 
  .text {
@@ -171,11 +172,12 @@ header {
 
 .detail h2 {
   font-size: 30px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .centerimg {
   width: 300px;
+  height: 200px;
   height: auto;
   display: flex;
   margin: auto;
@@ -183,11 +185,22 @@ header {
 #aside {
   display: none;
 }
+/**************************Pagination**************************/
+.navigation {
+  width: 130px;
+  display: flex;
+  margin-left: 20px;
+}
+.navigation a {
+  color: black;
+  width: 100px;
+  display: flex;
+}
+
 
 /*************************formulaire commentaires*******************/
 
 #respond {
-  border: 5px solid rgb(90, 247, 214);
   width: 300px;
   display: block;
   margin: auto;
@@ -223,23 +236,25 @@ header {
   color: black;
 }
 
-
+/**********************Page contact*************************/
+form {
+  background-color: white;
+  margin-top: ;
+}
 /*************************Footer*****************************/
-#piedpage {
-  width: 300px;
-  margin: auto;
-}
-
-#piedpage p {
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 30px;
-  padding: 10px 0 10px 0;
-}
 
 footer {
   background-color: rgb(90, 247, 214);
-  height: 100%;
+  position: relative;
+  bottom:0;
+
+}
+#piedpage p {
+  margin-top: 150px;
+  height: 320px;
+    background-color: rgb(90, 247, 214);
+    text-align: center;
+    padding-top: 20px;
 }
 
 /* ==========================================================================
@@ -289,9 +304,10 @@ footer {
   width: 600px;
 }
 
+
 #aside{
   display: inline;
-  margin-top: 210px;
+  margin-top: 240px;
   background-color: white;
 }
 
@@ -311,6 +327,10 @@ footer {
   text-decoration: underline;
 }
 
+#searchform {
+  width: 200px;
+}
+
 /***********************form commentaires**********************/
 #respond {
   width: 500px;
@@ -320,10 +340,18 @@ footer {
 
 #tribe-events-content {
   width: 600px;
+
 }
 
 .tribe-events-event-image  {
   width: 600px !important;
+}
+
+/********************Page contact********************************/
+form {
+  width: 600px;
+  margin: auto;
+  border: 3px solid rgb(90, 247, 214);
 }
 }
 

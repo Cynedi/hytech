@@ -1,6 +1,7 @@
 <footer>
   <div id="piedpage">
     <p>@Copyright2017 author Cindy Nicolay</p>
+  
   </div>
 </footer>
 

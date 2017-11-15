@@ -32,8 +32,7 @@
     </section>
   </div>
 
-      <div class="nav-previous"><?php next_posts_link( 'Older Entries »', 0 ); ?></div>
-      <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'mon-theme' ) ); ?></div>
+      
 
 
 

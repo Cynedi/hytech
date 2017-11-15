@@ -20,5 +20,5 @@ register_sidebar(array('name'=>'defaut', //nom de la sidebar
 // aciver les images à la une
 add_theme_support('post-thumbnails');
 
-
+if (function_exists('wp_pagenavi')) wp_pagenavi();
 ?>

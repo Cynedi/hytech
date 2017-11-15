@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 
-
-
-
 <!--Boucle wordpress-->
 <div class="vide">
 
 </div>
 <?php if(have_posts()) : //si on recupère article
+
+
   while (have_posts()) : the_post(); ?> <!--Boucle: on les recupère un à un-->
 
 
@@ -36,8 +35,7 @@
       </div>
 
 
-      <div class="nav-previous"><?php next_posts_link( 'Older Entries »', 0 ); ?></div>
-      <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'mon-theme' ) ); ?></div>
+
 
 
 
@@ -51,8 +49,10 @@ sage d'erreur -->
 <?php endif; ?>
 
 <!-- Fin de la condition -->
-
-
+<div class="navigation">
+    <div class="alignleft"><?php posts_nav_link('','','&laquo; Précedent') ?></div>
+    <div class="alignright"><?php posts_nav_link('','Next Entries &raquo;','') ?></div>
+  </div>
 
 
 <?php get_footer(); ?>

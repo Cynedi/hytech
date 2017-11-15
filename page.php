@@ -15,4 +15,5 @@ sage d'erreur -->
 <?php endif; ?>
 <!-- Fin de la condition -->
 
+
 <?php get_footer(); ?>
