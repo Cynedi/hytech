@@ -168,6 +168,7 @@ header {
 .detail {
   margin-top: 210px;
   background-color: white;
+
 }
 
 .detail h2 {
@@ -185,6 +186,13 @@ header {
 #aside {
   display: none;
 }
+
+#vuedetaille {
+  background-color: rgb(189, 33, 164);
+  margin-bottom: 50px;
+}
+
+
 /**************************Pagination**************************/
 .navigation {
   width: 130px;
@@ -304,10 +312,14 @@ footer {
   width: 600px;
 }
 
-
+.detail {
+  margin-left: 50px !important;
+  margin-top: 330px;
+}
 #aside{
   display: inline;
-  margin-top: 240px;
+  margin-top: 330px;
+  margin-right: 50px;
   background-color: white;
 }
 
@@ -355,7 +367,14 @@ form {
 }
 }
 
-
+@media only screen and (min-width: 768px) {
+  .detail {
+    margin-left: 100px !important;
+  }
+  #aside {
+    margin-right: 100px;
+  }
+}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

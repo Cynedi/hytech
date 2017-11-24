@@ -4,6 +4,14 @@ add_theme_support('nav_menus');
 register_nav_menu('primary', 'Menu principal');
 // primary: id interne, Menu principal: libellé dans le dashboard
 
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
 
 
 //sidebar defaut
@@ -19,6 +27,3 @@ register_sidebar(array('name'=>'defaut', //nom de la sidebar
 
 // aciver les images à la une
 add_theme_support('post-thumbnails');
-
-if (function_exists('wp_pagenavi')) wp_pagenavi();
-?>

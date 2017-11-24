@@ -4,15 +4,15 @@
 <a  href="index.php/blog">Retour à la liste des articles</a>
 </div>
 
-<div class="row">
+<div id="vuedetaille" class="row">
 
 <!--Aside-->
-  <div id="aside" class="right  col m2">
+  <div id="aside" class="right  col m3">
   <?php dynamic_sidebar('defaut'); ?>
   </div>
 
 <!--Vue detaillé de l'article-->
-<div class=" detail col s12 m8">
+<div class=" detail col s12 m6">
 
 
 <?php if(have_posts()) : //si on recupère article
