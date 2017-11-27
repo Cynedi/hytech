@@ -188,8 +188,12 @@ header {
 }
 
 #vuedetaille {
-  background-color: rgb(189, 33, 164);
-  margin-bottom: 50px;
+  background-color: transparent;
+
+}
+
+.aboutme {
+  margin-bottom: 20px;
 }
 
 
